@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TXVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 Puzzle"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/GLYBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TXVTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignMargins">
+
+        <!-- Botones 4x4 (16) -->
+        <Button android:id="@+id/BTN00" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN01" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN02" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN03" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+
+        <Button android:id="@+id/BTN10" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN11" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN12" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN13" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+
+        <Button android:id="@+id/BTN20" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN21" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN22" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN23" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+
+        <Button android:id="@+id/BTN30" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN31" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN32" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+        <Button android:id="@+id/BTN33" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/LYButtons"
+        android:layout_below="@id/GLYBoard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BTNShuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desordenar" />
+
+        <Button
+            android:id="@+id/BTNReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
