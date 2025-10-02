@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+<<<<<<< HEAD
 //Eduardo Morales Rojas
+=======
+>>>>>>> d306d1571a19c836dfca7077c410618683aa9620
 
     private lateinit var boardButtons: Array<Array<Button>>
     private val size = 4
