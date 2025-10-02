@@ -7,6 +7,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 //Eduardo Morales Rojas
+
     private lateinit var boardButtons: Array<Array<Button>>
     private val size = 4
     private var board = Array(size) { Array(size) { 0 } }
